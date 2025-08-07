@@ -1,6 +1,10 @@
 # rxjs-operators-import-migration-v6-v7
 
-Provides a script for migrating rxjs v6-v7 operators: imports from 'rxjs/operators' are gonna be deprecated soon as per docs -> import directly from 'rxjs'. This script leverages the jscodeshift lib in order to process all ts files, fixing the imports. The script respects existing imports from 'rxjs' - operators are gonna be appended to that import. 
+Provides a script for migrating rxjs v6-v7 operators. 
+Imports from `'rxjs/operators'` are gonna be deprecated soon as per docs, you should import directly from `'rxjs'`. 
+
+This script leverages the jscodeshift lib in order to process all TS files, fixing the imports. 
+The script respects existing imports from 'rxjs' (operators are gonna be appended to that import). 
 
 ## Running
 
