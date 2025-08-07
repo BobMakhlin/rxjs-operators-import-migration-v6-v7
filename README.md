@@ -5,5 +5,6 @@ Provides a script for migrating rxjs v6-v7 operators: imports from 'rxjs/operato
 ## Running
 
 1. add jscodeshift as dev dep: `yarn install -D jscodeshift`
-2. `jscodeshift -t rxjs-import-migration.js your-folder --extensions=ts --parser=ts --dry --print`: A dry run printing the results, but not applying them to the files of the 'your-folder' dir. Use to verify the script aint faling for you (smoke).
-3. `jscodeshift -t rxjs-import-migration.js your-folder --extensions=ts --parser=ts`: Run the script for all ts-files within 'your-folder' directory. The changes are gonna be applied right away to your files.
+2. copy the `rxjs-import-migration.js` to your app
+3. `jscodeshift -t rxjs-import-migration.js your-folder --extensions=ts --parser=ts --dry --print`: A dry run printing the results, but not applying them to the files of the 'your-folder' dir. Use to verify the script aint faling for you (smoke).
+4. `jscodeshift -t rxjs-import-migration.js your-folder --extensions=ts --parser=ts`: Run the script for all ts-files within 'your-folder' directory. The changes are gonna be applied right away to your files.
